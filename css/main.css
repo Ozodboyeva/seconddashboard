@@ -1,0 +1,111 @@
+main {
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  background-color: #fff;
+  overflow: auto;
+}
+
+.owerview {
+  /* margin-top: 90px; */
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+.btn .btn1 {
+  border: none;
+  background-color: #eef2f5;
+}
+.btn .btn2 {
+  padding: 9px 18px;
+  border-radius: 5px;
+  background: #10cd45;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.overal {
+  color: #000;
+  font-size: 39px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  main {
+    overflow: auto scroll;
+  }
+  .btn > .btn1 .btn2 {
+    display: none;
+  }
+  table {
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  table {
+    width: 900px;
+  }
+  .close #dark-light {
+    transform: translateX(-100px) !important;
+  }
+}
+@media (max-width: 800px) {
+  .close #dark-light {
+    transform: translateX(-95px) !important;
+  }
+}
+@media (max-width: 790px) {
+  .close #dark-light {
+    transform: translateX(-85px) !important;
+  }
+}
+@media (max-width: 760px) {
+  .close #dark-light {
+    transform: translateX(-75px) !important;
+  }
+}
+@media (max-width: 700px) {
+  .close #dark-light {
+    transform: translateX(-60px) !important;
+  }
+}
+@media (max-width: 650px) {
+  .close #dark-light {
+    transform: translateX(-50px) !important;
+  }
+}
+@media (max-width: 600px) {
+  .close #dark-light {
+    transform: translateX(-40px) !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .close #dark-light {
+    transform: translateX(-35px) !important;
+  }
+}
+@media (max-width: 500px) {
+  .close #dark-light {
+    transform: translateX(-103px) !important;
+  }
+}
+@media (max-width: 410px) {
+  .close #dark-light {
+    transform: translateX(-30px) !important;
+  }
+}

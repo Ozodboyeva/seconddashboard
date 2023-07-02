@@ -1,0 +1,78 @@
+header {
+  background-color: #fff;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+}
+.hamburger {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #000000;
+}
+.pofile-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.pofile-text p {
+  color: var(--grayscale-black);
+  text-align: right;
+  font-size: 14px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.pofile-text img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media (max-width: 1300px) {
+  :root {
+    --aside-width: 290px;
+  }
+  header {
+    left: var(--aside-width);
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --aside-width: 270px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --aside-width: 260px;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --aside-width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --aside-width: 230px;
+  }
+}
+@media (max-width: 380px) {
+  :root {
+    --aside-width: 220px;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    --aside-width: 210px;
+  }
+}
+@media (max-width: 330px) {
+  :root {
+    --aside-width: 200px;
+  }
+}

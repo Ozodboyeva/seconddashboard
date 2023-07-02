@@ -1,0 +1,16 @@
+.close,
+.close ~ * {
+  --aside-width: 70px;
+}
+
+.close a span {
+  opacity: 0;
+}
+
+.close #dark-light {
+  transform: translateX(-120px);
+}
+
+.close #dark-light a {
+  display: inline-block;
+}

@@ -1,0 +1,143 @@
+aside {
+  width: var(--aside-width);
+  height: 100vh;
+  position: fixed;
+  background-color: var(--sidebar-bg);
+}
+aside a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+  color: black;
+  white-space: nowrap;
+  transition: var(--aside-transition);
+}
+.left {
+  margin-left: 12px;
+}
+
+aside a span {
+  transition: var(--aside-transition);
+}
+.aside-logo a {
+  padding-left: 23px;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+.aside-logo a {
+  color: #a4a6b3;
+  font-size: 19px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  opacity: 0.699999988079071;
+}
+.aside-menu {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-item img {
+  margin-right: 23px;
+}
+.nav-link {
+  color: #a4a6b3;
+  font-size: 16px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.nav-link:hover {
+  background-color: #a4a6b3;
+  color: var(--main-light-blue);
+}
+#dark-light {
+  transition: var(--aside-transition);
+}
+
+#dark-light a {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  margin-left: 7px;
+  padding: 2.5px;
+  width: 55px !important;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+  appearance: none;
+}
+
+.switch::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.switch:checked {
+  background-color: white;
+}
+
+.switch:checked::after {
+  margin-left: 25px;
+  background-color: black;
+}
+@media (max-width: 1300px) {
+  aside {
+    --aside-width: 290px;
+  }
+  .aside-menu {
+    justify-content: start;
+  }
+}
+@media (max-width: 800px) {
+  aside {
+    --aside-width: 270px;
+  }
+}
+@media (max-width: 600px) {
+  aside {
+    --aside-width: 260px;
+  }
+}
+@media (max-width: 500px) {
+  aside {
+    --aside-width: 250px;
+  }
+  @media (max-width: 400px) {
+    aside {
+      --aside-width: 230px;
+    }
+    .active {
+      display: none;
+    }
+  }
+}
+@media (max-width: 380px) {
+  aside {
+    --aside-width: 220px;
+  }
+}
+@media (max-width: 350px) {
+  aside {
+    --aside-width: 210px;
+  }
+}
+@media (max-width: 330px) {
+  aside {
+    --aside-width: 200px;
+  }
+}

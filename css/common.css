@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --aside-width: 300px;
+  --header-height: 80px;
+  --footer-height: 40px;
+  --sidebar-bg: #363740;
+  --main-light-blue: #dde2ff;
+  --aside-transition: 0.5s;
+  --grayscale-black: #252733;
+}
+header,
+main,
+footer {
+  position: fixed;
+  left: var(--aside-width);
+  padding: 20px;
+  width: calc(100vw - var(--aside-width));
+  transition: var(--aside-transition);
+}
+footer {
+  bottom: 0;
+  height: var(--footer-height);
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
